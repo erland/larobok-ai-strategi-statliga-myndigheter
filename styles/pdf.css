@@ -1,0 +1,24 @@
+@page {
+  margin: 25mm 22mm 25mm 22mm;
+}
+body {
+  font-family: serif;
+  line-height: 1.45;
+}
+h1 {
+  page-break-before: always;
+}
+h1, h2, h3 {
+  line-height: 1.25;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th, td {
+  border: 1px solid #777;
+  padding: 6px;
+}
+img {
+  max-width: 100%;
+}

@@ -1,0 +1,58 @@
+title: AI-strategi för statliga myndigheter
+subtitle: Hur verksamhetsstrateger och verksamhetsarkitekter leder AI-arbetet från
+  idé till verksamhetsförmåga
+author: Erland Lindmark
+language: sv
+difficulty: basic-to-experienced
+audience: Verksamhetsstrateger och verksamhetsarkitekter inom statlig myndighet
+book_type: textbook-handbook
+edition: '1'
+version: "0.9-B3"
+date: "2026-06-03"
+rights: All rights reserved
+publisher: ''
+cover_image: assets/cover/cover.png
+identifier: urn:uuid:cc275762-8685-4e0b-b656-599e58839761
+creator_role: aut
+subject: AI-strategi, generativ AI, offentlig sektor, verksamhetsarkitektur, statlig myndighet
+description: En praktisk lärobok om hur verksamhetsstrateger och verksamhetsarkitekter
+  kan leda AI-arbete i statliga myndigheter.
+project_slug: ai-strategi-statliga-myndigheter
+chapters:
+- chapters/00-inledning.md
+- chapters/varfor-ai-forandrar-offentlig-sektor-01.md
+- chapters/verksamhetsstrategens-och-verksamhetsarkitektens-nya-roll-02.md
+- chapters/ai-landskapet-utan-teknisk-jargong-03.md
+- chapters/att-formulera-en-ai-strategi-04.md
+- chapters/att-beskriva-malbild-och-framtida-formagor-05.md
+- chapters/ai-governance-och-styrning-06.md
+- chapters/ai-act-gdpr-och-offentlig-sektor-07.md
+- chapters/informationssakerhet-etik-och-tillit-08.md
+- chapters/data-och-informationsforvaltning-som-grund-for-ai-09.md
+- chapters/identifiera-mojligheter-10.md
+- chapters/prioritera-ai-anvandningsfall-11.md
+- chapters/bygga-en-ai-portfolj-12.md
+- chapters/genomfora-piloter-13.md
+- chapters/forandringsledning-och-kompetens-14.md
+- chapters/verksamhetsarkitektur-for-ai-15.md
+- chapters/skalning-och-operativisering-16.md
+- chapters/ai-som-langsiktig-verksamhetsformaga-17.md
+- chapters/de-forsta-100-dagarna-som-ai-strategisk-ledare-18.md
+exports:
+  epub:
+    enabled: true
+    include_text_toc: false
+    airy_layout: true
+    render_markdown_styles: true
+  pdf:
+    enabled: true
+    include_toc_before_introduction: true
+    render_markdown_styles: true
+  docx:
+    enabled: true
+    render_markdown_styles: true
+  markdown:
+    enabled: true
+
+# EPUB export note: keep title page in reading order, but exclude it from navigation TOC.
+include_title_page_in_toc: false
