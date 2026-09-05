@@ -99,9 +99,11 @@ def main() -> int:
             author = latex_escape(str(metadata.get("author", "")))
             frontmatter.write_text(
                 "\\thispagestyle{empty}\n"
-                "\\newgeometry{margin=0pt}\n"
                 f"\\noindent\\includegraphics[width=\\paperwidth,height=\\paperheight]{{{cover}}}\n"
-                "\\restoregeometry\\clearpage\n"
+                # Changing geometry here flushes the cover page and then applies
+                # the normal book margins. Doing it before the cover would create
+                # an empty first page.
+                "\\newgeometry{margin=22mm}\n"
                 "\\thispagestyle{empty}\n"
                 "\\vspace*{0.18\\textheight}\n"
                 "\\begin{center}\n"
