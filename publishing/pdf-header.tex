@@ -2,11 +2,14 @@
 \usepackage{longtable,booktabs,array}
 \usepackage{enumitem}
 \usepackage{microtype}
+% Start the document with zero margins so the cover is the first physical page.
+% Normal book margins are applied immediately after the cover in frontmatter.tex.
+\geometry{margin=0pt}
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0.65em}
 \setlist{itemsep=0.2em,topsep=0.4em}
 \setcounter{secnumdepth}{0}
-\setcounter{tocdepth}{0}
+\setcounter{tocdepth}{1}
 \usepackage{titlesec}
 \titleformat{\section}
   {\centering\Large\bfseries}
