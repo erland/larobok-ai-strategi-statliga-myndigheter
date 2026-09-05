@@ -99,8 +99,10 @@ def main() -> int:
             author = latex_escape(str(metadata.get("author", "")))
             frontmatter.write_text(
                 "\\thispagestyle{empty}\n"
-                f"\\noindent\\includegraphics[width=\\paperwidth,height=\\paperheight]{{{cover}}}\n"
-                "\\newgeometry{margin=22mm}\n"
+                "\\AddToShipoutPictureBG*{\\AtPageLowerLeft{%\n"
+                f"  \\includegraphics[width=\\paperwidth,height=\\paperheight]{{{cover}}}%\n"
+                "}}\n"
+                "\\null\\clearpage\n"
                 "\\thispagestyle{empty}\n"
                 "\\vspace*{0.18\\textheight}\n"
                 "\\begin{center}\n"
